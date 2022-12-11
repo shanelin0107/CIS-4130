@@ -1,6 +1,6 @@
 # CIS-4130
 Term project- sentiment analysis on Amazon customers review data
-# Project deccription
+# Project description
 
 # Summary
 
