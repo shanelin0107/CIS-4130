@@ -2,14 +2,14 @@
 ## Project description
 
 
-In this porject, I'm going to do sentiment analysis to Amazon customer reviews data to classify customers attitude toward the products they bought. We want to know how's customers' thoughts and feeling behind their reviews to see the feedback of the products on Amazon. We need to clean the data and do text preprocessing and make them into a pipeline to prepare to train the model. We select to use logistic regression to create the model to complete this project. And in the end, we would also need to do visualization about project results and model performance graph to evaluate how's our model doing in the project. 
+In this porject, I'm going to do sentiment analysis to Amazon customer reviews data to classify customers attitude toward the products they bought. I want to know how's customers' thoughts and feeling behind their reviews to see the feedback of the products on Amazon. I need to clean the data and do text preprocessing and make them into a pipeline to prepare to train the model. I select to use logistic regression to create the model to complete this project. And in the end, I would also need to do visualization about project results and model performance graph to evaluate how's our model doing in the project. 
 
 ## Data Acquisition
 
-We used AWS Command Line Interface to extract data from Kaggle to Amazon S3 Bucket.
+I used AWS Command Line Interface to extract data from Kaggle to Amazon S3 Bucket. I need to prepare our AWS Access Key Aand Secret Key ID. Then I define the region at "us-east-2" and output foramt choose "json". Once I download the data, it would be a zip file then I have to unzip it to our S3 Bucket.
 
 
-## data dictionary
+## Data dictionary
 
 1. marketplace- 2 letter country code of the marketplace where the review was written.
 2. customer_id- Random identifier that can be used to aggregate reviews written by a single author.
@@ -27,5 +27,11 @@ We used AWS Command Line Interface to extract data from Kaggle to Amazon S3 Buck
 14. review_body- The review text.
 15. review_date- The date the review was written.
 
+## Machine Learnging Modeling and Pipeline
 
+In this project, I choose to use Logistic Regression as our model since our label was categorical variable which include only "Positve" which equal to 0, and "Negative" which equal to 1. As for the pipeline, I apply several of operation to our reviews data such as Tokenizer, StopWordsRemover, HashingTF, IDF, StringIdexer, LogicticRegression, then we put all these steps to our pipeline. Besides, in order to get more accurate results from this model, I also use grid search and cross validator to test more model and find the best hyperparameters to train our data.
+
+## Visualization
+
+ccc
 
