@@ -31,6 +31,8 @@ I used AWS Command Line Interface to extract data from Kaggle to Amazon S3 Bucke
 
 In this project, I choose to use Logistic Regression as our model since our label was categorical variable which include only "Positve" which equal to 0, and "Negative" which equal to 1. As for the pipeline, I apply several of operation to our reviews data such as Tokenizer, StopWordsRemover, HashingTF, IDF, StringIdexer, LogicticRegression, then we put all these steps to our pipeline. Besides, in order to get more accurate results from this model, I also use grid search and cross validator to test more model and find the best hyperparameters to train our data.
 
+
+
 ## Sources:
 1.	https://github.com/Kaggle/kaggle-api/issues/315
 2.	Sentiment Analysis with PySpark. One of the tools I’m deeply interested… | by Ricky Kim | Towards Data Science
